@@ -14,7 +14,7 @@ icon.onclick = () => {
 // Typing effect
 const typingText = document.getElementById("typing-text")
 const text =
-    "JEE ADVANCED 2023 || Contributor @GSSOC'24 || M&C Branch-RGIPT-(2023-27) || C++ || CodeForces-1183 || Codechef(3🏅)-1667 || HTML-CSS-JS || Designer || Gamer🎮"
+    "SIH 2024 Grand Finalist | Top 98 in Asia Pacific Google AI hackathon | Finalist @GreenAI | JEE ADVANCED 2023 | M&C RGIPT-27 | 1183 @CodeForces | 1667 @CodeChef | Ai/ML | Web3 | Unreal"
 let i = 0
 
 function typeWriter() {
