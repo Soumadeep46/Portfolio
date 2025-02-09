@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #232532;
+    --text-color: #6e8bc0;
+    --highlight-color: rgb(20, 40, 220);
+    --accent-color: rgb(255, 2, 2);
+}
+
+.dark-theme {
+    --primary-color: #232532;
+    --secondary-color: #fff;
+    --text-color: #a0b4e0;
+    --highlight-color: rgb(100, 120, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1;
+}
+
+.img-box {
+    width: 45%;
+    height: 400px;
+    position: relative;
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.img-box:hover .back-img {
+    transform: scale(1.05);
+}
+
+.img-box:hover .main-img {
+    transform: translateX(-20px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    text-align: left;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: var(--text-color);
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: var(--highlight-color);
+}
+
+button {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: var(--text-color);
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+    }
+    .img-box {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

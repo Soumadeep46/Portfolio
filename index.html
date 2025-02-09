@@ -1,176 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Soumadeep Samanta - Portfolio</title>
 </head>
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-}
 
-:root{
-    --primary-color: #edf2fc;
-    --secondary-color: #232532;}
-.dark-theme{
-    --primary-color: #232532;
-    --secondary-color: #fff;
-}
-#icon{
-    width: 30px;
-    cursor: pointer;
-}
-nav ul{
-    flex: 1;
-    text-align: right;
-}
-.sani{
-    height: 100vh;
-    width: 100%;
-    background: var(--primary-color);
-    font-family: sans-serif;
-    position: relative;
-}
-
-nav{
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 200px;
-    cursor: pointer;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #6e8bc0;
-}
-
-nav ul li a:hover{
-    color: rgb(20, 40, 220);
-}
-
-.info{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-
-.info h1{
-    font-size: 50px;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-span{
-    color: rgb(255, 2, 2);
-}
-.info p{
-    color: #6e8bc0;
-    line-height: 22px;
-}
-
-.info a{
-    background: var(--secondary-color);
-    padding: 10px 18px;
-    text-decoration: none;
-    color: var(--primary-color);
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-}
-.img-box{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
-
-.img-box img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    transition: bottom 1s, left 1s;
-}
-
-.img-box:hover .back-img
-{
-    bottom: 40px;
-}
-
-.img-box:hover .main-img{
-    left: 54%;
-}
-
-.social-links{
-    margin-left: 8%;
-    margin-top: 220px;
-}
-
-.social-links a{
-    font-size: 30px;
-    color: #6e8bc0;
-    margin-right: 20px;
-}
-.social-links a:hover{
-    color: #ff4321;
-}
-</style>
 <body>
-    <div class="sani">
+    <div class="container">
         <nav>
             <img src="WhatsApp_Image_2023-12-21_at_16.57.56_87db5082-removebg-preview.png" alt="LOGO" class="logo">
-<!--             <ul>
-                <li><a href="HOME">HOME</a></li>
-                <li><a href="ABOUT">ABOUT</a></li>
-                <li><a href="SERVICES">SERVICES</a></li>
-                <li><a href="CONTACT US">CONTACT US</a></li>
-            </ul> -->
-            <img src="download.png" id="icon">
+            <img src="download.png" id="icon" alt="Theme toggle">
         </nav>
-        <div class="info">
-            <h1>Soumadeep Samanta</h1>
-            <p>JEE ADVANCED 2023 || Contributor @GSSOC'24|| M&C Branch-RGIPT-(2023-27) || C++ ||\n<br> CodeForces-1183|| Codechef(3&#128171)-1667|| HTML-CSS-JS ||Designer||Gamer&#127918</p>
-            
-        </div>
-        <div class="img-box">
-            <img src="Blue-abstract-liquid-shapes-on-transparent-background-PNG.png" class="back-img" alt="">
-            <img src="IMG_20231007_202358.png" class="main-img" alt="">
-        </div>
+
+
+        <section id="profile">
+            <div class="info">
+                <h1> Soumadeep Samanta</h1>
+                <p id="typing-text"></p>
+            </div>
+            <div class="img-box">
+                <img src="Blue-abstract-liquid-shapes-on-transparent-background-PNG.png" class="back-img" alt="">
+                <img src="Adobe Express - file.png" class="main-img" alt="">
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education and Skills</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech in Mathematics and Computing</td>
+                    <td>RGIPT</td>
+                    <td>2023-2027</td>
+                </tr>
+            </table>
+
+            <h3>Skills</h3>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar">
+                    <div style="width: 90%"></div>
+                </div>
+                <div class="skill">
+                    <span>C++</span>
+                    <div class="progress-bar">
+                        <div style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML/CSS</span>
+                    <div class="progress-bar">
+                        <div style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div style="width: 55%"></div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="quote">
+            <h2>Random Quote</h2>
+            <p id="quote-text"></p>
+            <button id="new-quote">New Quote</button>
+        </section>
+
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/soumadeep-samanta-2a4199288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/soumadeepsamanta/"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/lord.bad.boy?igsh=MXJtaHJ0NTAzN3lhag=="><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/Soumadeep46"><i class="fab fa-github"></i></a>
         </div>
-    </div>
+        </div>
 
-    <script>
-        var icon= document.getElementById("icon");
-
-        icon.onclick=function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-                icon.src="download__1_-removebg-preview.png";
-            }else{
-                icon.src="download.png";
-            }
-        }
-    </script>
+        <script src="script.js"></script>
 </body>
+
 </html>
